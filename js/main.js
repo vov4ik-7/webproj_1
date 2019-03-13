@@ -35,12 +35,13 @@ $(document).ready(function () {
     });
 
     let prevScroll = 0;
-    let currScroll;
+    let currScroll = 0;
     $(window).on('scroll', function () {
         var hasBeenTrigged = false;
-        currScroll = window.pageYOffset || document.documentElement.scrollTop;
+        currScroll = window.pageYOffset;// || document.documentElement.scrollTop;
         if(currScroll == 0){
             currIndx = 0;
+            prevScroll = 0;
         }
         console.log(currScroll);
         if(currScroll > prevScroll){
