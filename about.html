@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap 4 Website Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!--<link rel="stylesheet" href="style/sidebar.css">-->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <style>
+        .fakeimg {
+            height: 200px;
+            background-image: url("img/logo.png");
+            background-size: 100% auto;
+            background-repeat: no-repeat;
+        }
+        .vertical-center {
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .jumbotron {
+            padding-bottom: 0;
+            padding-top: 0;
+            padding-left: 0;
+            padding-right: 0;
+            background-image: url("img/tiger.jpg");
+            background-size: 100% auto;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .welcome {
+            height: 100vh;
+        }
+
+        .carousel-inner > .carousel-item > img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            max-height: 800px;
+            width: auto;
+        }
+    </style>
+</head>
+<body>
+
+<div id="welcome" class="welcome">
+    <nav class="navbar sticky-top navbar-expand-sm navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Safari</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="jumbotron" style="margin-bottom:0;">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <h2 style="color: #8b4513">About Me</h2>
+                    <h6 style="color: #F4A460">Our logo:</h6>
+                    <div class="fakeimg">
+                        <!--<img class="btx-navbar-logo btx-navbar-logo&#45;&#45;image" src="https://tourafrica-safaris.com/tour/wp-content/uploads/2018/10/TAS-Logo-Simple2.png" alt="logo">-->
+                    </div>
+                    <hr class="d-sm-none">
+                </div>
+                <div class="col-sm-8">
+                    <h2 style="color: #8b4513">TITLE HEADING</h2>
+
+                    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab adipisci architecto aspernatur
+                        culpa, cupiditate, delectus deserunt fugiat illo itaque minus optio possimus provident quasi qui
+                        quibusdam? Eveniet iure recusandae voluptatem.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
+
