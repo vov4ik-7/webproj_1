@@ -98,7 +98,7 @@ body{
 }
 .carousel-inner{
     width: auto;
-    max-height: 400px !important;
+    max-height: 600px !important;
 }
 .carousel-inner > .carousel-item {
     height: 75vh;
