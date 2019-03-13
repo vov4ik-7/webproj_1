@@ -114,3 +114,10 @@ body{
     max-height: 800px;
     width: auto;
 }
+
+.logo{
+    height: 200px;
+    background-image: url("../img/logo.png");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}

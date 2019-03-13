@@ -47,12 +47,14 @@ $(document).ready(function () {
         if(currScroll > prevScroll){
             if(currScroll - prevScroll >= 30 && !hasBeenTrigged){
                 hasBeenTrigged = true;
-                currIndx++;
-                scrollToAnchor(contArr[currIndx]);
-                prevScroll = $("#"+ contArr[currIndx]).offset().top;
-                console.log('kek');
-                console.log(prevScroll);
-                //$(this).off('scroll');
+                if(currIndx < 2){
+                    currIndx++;
+                    scrollToAnchor(contArr[currIndx]);
+                    prevScroll = $("#"+ contArr[currIndx]).offset().top;
+                    console.log('kek');
+                    console.log(prevScroll);
+                    //$(this).off('scroll');
+                }
             }
         }
         /*else if(prevScroll > currScroll){
