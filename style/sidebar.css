@@ -121,3 +121,6 @@ body{
     background-size: 100% auto;
     background-repeat: no-repeat;
 }
+.text{
+    font-family: Palatino;
+}
